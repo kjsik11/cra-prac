@@ -69,6 +69,8 @@ const Todo = () => {
         >
           Add
         </button>
+
+        <div>test div</div>
         <div className="flex mt-10 text-xl mx-auto lg:space-x-10 lg:justify-between">
           <ul className="text-gray-700 w-full mx-8 lg:w-1/2 lg:mx-0">
             {todoList.map((todo, index) => (
@@ -78,6 +80,7 @@ const Todo = () => {
                 } flex justify-between text-left mb-2 py-2 px-3 rounded-md shadow-md hover:bg-gray-100 lg:border lg:border-gray-100 lg:px-6 lg:py-4`}
                 key={`${index}-${todo.title}`}
               >
+                <div>hello</div>
                 <span
                   className={`truncate w-60 flex-1 cursor-default ${
                     todo.done ? 'opacity-20 line-through' : ''
@@ -85,6 +88,7 @@ const Todo = () => {
                 >
                   {todo.title}
                 </span>
+                <span>test</span>
                 <div className="space-x-1 lg:space-x-4">
                   <button
                     className="text-sm font-semibold opacity-40 hover:text-green-400 hover:opacity-100 px-1 lg:text-lg"

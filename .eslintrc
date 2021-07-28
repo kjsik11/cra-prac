@@ -18,7 +18,12 @@
   },
   "plugins": ["react", "prettier"],
   "rules": {
-  "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+  ],
   "no-unused-vars":"warn",
   "react/react-in-jsx-scope" : 0
   }
